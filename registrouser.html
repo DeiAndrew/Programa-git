@@ -9,27 +9,28 @@
 <body class="fondo">
     <a href="servicios.html">
         <img style="margin-left: 90%; height: 80px ;" src="IMG/flechatras.png" alt="Boton Registrar"></a>
-   <form>
-        <div class="formulario">
-            <strong><label for="Nombre">Nombre</label></strong>
-            <input type="text" class="textbox" placeholder="Nombre del Usuario">
-            <p><strong><label for= "Apellido">Apellido</label></strong>
-            <input type="text" class="textbox" placeholder="Apellido del Usuario"></p>
-            <p><strong><lavel for="Cedula">Cedula</lavel></strong>
-            <input type="number" class="textbox" placeholder="Numero de Cedula"></p>
-            <p><strong><label for="contraseña">Password</label></strong>
-            <input Type="password" class="textbox" placeholder="Contraseña a Asignar"></p>
-            <p><strong><label for="area">Area del Usuario</label></strong>
-            <input type="text" class="textbox" placeholder="Area del Usuario"></p>
-        </div>
-        </form>
+         <form action="conexion.php" method="post">
+            <div class="formulario">
+                <strong><lavel for="Cedula">Cedula</lavel></strong>
+                <input type="number" name="Cedula" class="textbox" placeholder="Numero de Cedula">
+                <p><strong><label for="Nombre">Nombre</label></strong>
+                <input type="text" name="Nombre" class="textbox" placeholder="Nombre del Usuario"></p>
+                <p><strong><label for= "Apellido">Apellido</label></strong>
+                <input type="text" name="Apellido" class="textbox" placeholder="Apellido del Usuario"></p>
+                <p><strong><label for="contraseña">Password</label></strong>
+                <input Type="password" name="Password" class="textbox" placeholder="Contraseña a Asignar"></p>
+                <p><strong><label for="area">Area del Usuario</label></strong>
+                <input type="text" name="Area" class="textbox" placeholder="Area del Usuario"></p>
+            </div>
+        
        
         <div class="contenedor">
             <img style="margin: 0 100px ;" src="IMG/LogoProD.png" alt="Logo ProdSoft">
-            <a href="procedexito.html">
-                <img  src="IMG/BotRegistrar.png" alt="Boton Registrar"></a>
+                <a href="procedexito.html">
+                <button type="submit"  name="Registrar"> <img src="IMG/BotRegistrar.png" alt="Boton Registrar"></button></a>
+        </form>    
         </div>
-        <div style="margin-top: -30px;">
+        <div style="margin-top: -1px;">
             <strong><label for="Registrar" style="margin-left: 68%;">Registrar</label></strong>
         </div>
       

@@ -11,18 +11,17 @@
 <div class="loguinbox">
 <center><img src="img/Loguin.png" class="imagenes" alt="Imagen de Logueo"></center>
 
-	<form>
+	<form action="Login.php" method="post">
 	<!--Usuario -->
 	<strong><label for="Usuario">Usuario</label></strong>
-	<input type="text" class="Fields" placeholder="Ingrese su Usuario ">
+	<input type="text" name="Usuario" class="Fields" placeholder="Ingrese su Usuario ">
 
 	<!--Contraseña -->
 	<p><strong><label for="password">Contraseña</label></strong>
-	<input type="password" class="Fields" placeholder="Ingrese su Contraseña "></p>
+	<input type="password" name="Contraseña" class="Fields" placeholder="Ingrese su Contraseña "></p>
 
 	<!--Boton Loguin -->
-	<a href="servicios.html">
-	<input type="submit" class="botonservicios"value="Ingresar"></a>
+	<input type="submit" name="Login" class="botonservicios"value="Ingresar">
 	
 	</form>
 <form>
